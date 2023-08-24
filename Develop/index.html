@@ -27,10 +27,20 @@
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
-      </div>
+    <section class="card-inputs">
+      <section>
+      <label for = "length">Password Length?</label>
+        <input type="number" id="length" min="8" max="128"/>
+    </section>
+    <section>
+        <label for ="letters">Include Letters?</label>
+        <input type="checkbox" id="letters">
+      </section>
+      <section>
+        <label for="numbers">Include Numbers?</label>
+        <input type="checkbox" id="numbers">
+    </section>
     </div>
     <script src="script.js"></script>
   </body>
 </html>
-
-<!-- HTML seems ok, refers to css and js files-->
