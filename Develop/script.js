@@ -1,8 +1,6 @@
 // Assignment Code
 
-// Code is not running properly, password does not generate
-
-// 
+// Code is not running properly, password does not generate, will turn in assignment and work with a tutor to clean it up for resubmit//
 
 const passwordEl = document.getElementById('#password');
 const lengthEl = document.getElementById('length');
