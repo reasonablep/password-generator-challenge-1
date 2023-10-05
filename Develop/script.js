@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+//Define character sets
 let charSets = {
   lowercase: 'abcdefghijklmnopqrstuvwxyz',
   uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -8,8 +9,10 @@ let charSets = {
   special: "!\"#$%&\"'()*+,-./:;<=>?@[\]^_`{|}~"
 }
 
+//Create Event Listener for Button
 generateBtn.addEventListener('click', function () {
 
+// Configure window prompts
 let passwordLength = window.prompt ("Enter password length");
 
 if (passwordLength > 128) {
@@ -46,6 +49,8 @@ if (uppercase) {
     return;
 
   }
+
+//Define generated password and characteristics
     let generatedPassword = generatePassword(passwordLength, charSet);
     writePassword(generatedPassword);
 
@@ -68,8 +73,6 @@ if (uppercase) {
 }
 
 // Write password to the #password input
-
-  
   function writePassword(password) {
   var passwordText = document.querySelector("#password");
 
